@@ -84,7 +84,7 @@
     #w-xt9665eb .text-block-css {
       border-color: rgba(229, 231, 235, 1);
       border-style: solid;
-      color: rgba(0, 0, 0, 1);
+      color: rgb(250, 250, 250);
       font-family: "Barlow", sans-serif;
       font-size: 22px;
       text-align: center;
@@ -106,7 +106,7 @@
     #w-libmqckf .text-block-css {
       border-color: rgba(229, 231, 235, 1);
       border-style: solid;
-      color: rgba(255, 255, 255, 1);
+      color: rgb(228, 84, 84);
       font-family: "UTM-Azkia.ttf", sans-serif;
       font-size: 52px;
       text-align: center;
@@ -133,7 +133,7 @@
       -webkit-text-stroke: 0px rgba(0, 0, 0, 1);
       border-color: rgba(229, 231, 235, 1);
       border-style: solid;
-      color: rgba(0, 0, 0, 1);
+      color: rgb(255, 255, 255);
       font-size: 18px;
       font-weight: bold;
       line-height: 1.5;
@@ -149,7 +149,7 @@
     }
   
     #w-nk5wr3l0 .line-container {
-      border-color: rgba(0, 0, 0, 1);
+      border-color: rgb(255, 255, 255);
       border-style: solid;
       border-width: 2px;
     }
@@ -162,7 +162,7 @@
     }
   
     #w-2wfccz0r .line-container {
-      border-color: rgba(0, 0, 0, 1);
+      border-color: rgb(255, 255, 255);
       border-style: solid;
       border-width: 2px;
     }
@@ -182,7 +182,7 @@
       -webkit-text-stroke: 0px rgba(0, 0, 0, 1);
       border-color: rgba(229, 231, 235, 1);
       border-style: solid;
-      color: rgba(0, 0, 0, 1);
+      color: rgb(255, 255, 255);
       font-size: 22px;
       font-weight: bold;
       letter-spacing: 7px;
