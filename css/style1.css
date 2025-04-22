@@ -53,7 +53,8 @@
       width: 540.625px;
       height: 800px;
       top: 0px;
-      left: 36px;
+      left: 0px;
+      margin-left: 36px;
       /* background: center center/ cover no-repeat content-box
         url(https://content.pancake.vn/web-media/e0/df/92/1e/713742bd3da8361f06c6bdcd7cfb4305126455815d7019752ab35d10-w:1730-h:2560-l:618022-t:image/jpeg.jpg)
         border-box; */
