@@ -31,11 +31,12 @@
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	  <link rel="stylesheet" href="./css/animatev4.css" type="text/css">
    </head>
-   <audio id="background-music" autoplay loop>
-	<source src="wedding.mp3" type="audio/mp3">
-	<source src="wedding.mp3" type="audio/mpeg">
-  </audio>
    <body ontouchstart>
+      <audio id="background-music" loop>
+         <source src="wedding.mp3" type="audio/mp3">
+         <source src="wedding.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
       <div class="pageview">
          <div id='webcake-alert-msg' class='w-alert-message-wrapper' style="display: none;z-index:9999999;"></div>
          <div   id="w-5fieb1sl" class="com-section"data-section>
@@ -420,12 +421,10 @@
 		});
 	</script>
    <script>
+    document.addEventListener('DOMContentLoaded', function () {
       const audio = document.getElementById('background-music');
-      const unmuteButton = document.getElementById('unmute-btn');
-    
-      unmuteButton.addEventListener('click', () => {
-        audio.muted = false;  // Unmute the audio
-      });
+      audio.play();  // Play the audio after the DOM is loaded
+    });
     </script>
    </body>
 </html>
