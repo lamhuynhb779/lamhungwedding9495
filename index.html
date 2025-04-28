@@ -30,485 +30,67 @@
       <link rel="preload" href="css/iconfont.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	  <link rel="stylesheet" href="./css/animatev4.css" type="text/css">
-     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-  
-      body, html {
-        height: 100%;
-        font-family: sans-serif;
-      }
-  
-      /* Cover Page */
-      .cover {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #ffe6ec;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-      }
-  
-      .heart {
-        width: 100px;
-        height: 90px;
-        background-color: red;
-        position: relative;
-        transform: rotate(-45deg);
-        cursor: pointer;
-        animation: beat 1s infinite;
-      }
-  
-      .heart::before,
-      .heart::after {
-        content: "";
-        width: 100px;
-        height: 90px;
-        background-color: red;
-        position: absolute;
-        border-radius: 50%;
-      }
-  
-      .heart::before {
-        top: -50px;
-        left: 0;
-      }
-  
-      .heart::after {
-        left: 50px;
-        top: 0;
-      }
-  
-      @keyframes beat {
-        0%, 100% {
-          transform: scale(1) rotate(-45deg);
-        }
-        50% {
-          transform: scale(1.1) rotate(-45deg);
-        }
-      }
-  
-      /* Main homepage content (initially hidden) */
-      .homepage {
-        display: none;
-        height: 100%;
-        background-color: #fff;
-        padding: 50px;
-        text-align: center;
-      }
-  
-      .homepage.show {
-        display: block;
-      }
-    </style>
    </head>
    <audio id="background-music" autoplay loop>
 	<source src="wedding.mp3" type="audio/mp3">
 	<source src="wedding.mp3" type="audio/mpeg">
   </audio>
    <body ontouchstart>
-
-      <!-- Cover with Heart -->
-      <div class="cover animate__animated animate__fadeIn">
-         <div class="heart animate__animated animate__zoomIn">
-         </div>
-      </div>
-       
-      <!-- Main Homepage -->
-      <div class="homepage animate__animated">
-         <div class="pageview">
-            <div id='webcake-alert-msg' class='w-alert-message-wrapper' style="display: none;z-index:9999999;"></div>
-            <div   id="w-5fieb1sl" class="com-section"data-section>
-               <div class="section-wrapper full-width full-height p-relative">
-                  <div class="section-background p-absolute full-width full-height lazy"></div>
-                  <div class="section-container full-height p-relative">
-                     <div   id="w-593k3hdo" class="com-image-block p-absolute">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-xt9665eb" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <h2 class="text-block-css full-width">THƯ MỜI TIỆC CƯỚI</h2>
-                        </div>
-                     </div>
-                     <div   id="w-libmqckf" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="full-width full-height">
-                           <div class="text-block">
-                              <!-- <h1 class="text-block-css full-width animate__animated animate__zoomIn">Bảo Lâm &amp; Kim Hưng</h1> -->
-                        <h1 class="text-block-css full-width animate__animated">Bảo Lâm &amp; Kim Hưng</h1>
-                           </div>
-                        </div>
-                     </div>
-                     <div   id="w-dqvmzi6o" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <h2 class="text-block-css full-width">THỨ 5 - 18H00<br></h2>
-                        </div>
-                     </div>
-                     <div   id="w-nk5wr3l0" class="p-absolute animate-on-scroll">
-                        <div class="line-css full-width">
-                           <div class="line-container"></div>
-                        </div>
-                     </div>
-                     <div   id="w-2wfccz0r" class="p-absolute animate-on-scroll">
-                        <div class="line-css full-width">
-                           <div class="line-container"></div>
-                        </div>
-                     </div>
-                     <div   id="w-fohw3jt3" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <h2 class="text-block-css full-width">22.05.2025</h2>
-                        </div>
-                     </div>
-                     <div   id="w-f0fwyhbu" class="com-image-block p-absolute">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-17tsexjy" class="com-image-block p-absolute">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-m1l6yd27" class="com-image-block p-absolute">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div   id="w-f9da4ivv" class="com-section"data-section>
-               <div class="section-wrapper full-width full-height p-relative">
-                  <div class="section-background p-absolute full-width full-height lazy"></div>
-                  <div class="section-container full-height p-relative">
-                     <div   id="w-6u8c2qnm" class="com-rectangle p-absolute animate-on-scroll">
-                        <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                     </div>
-                     <div   id="w-gvymydtl" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">“Trăm năm tình viên mãn,<br>Bạc đầu nghĩa phu thê</p>
-                        </div>
-                     </div>
-                     <div   id="w-4yh6c15f" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">&nbsp;NHÀ TRAI<br><br></p>
-                        </div>
-                     </div>
-                     <div   id="w-gbb0dhda" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Bảo Lâm&nbsp;</p>
-                        </div>
-                     </div>
-                     <div   id="w-vw5ecqpv" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Chú Rể</p>
-                        </div>
-                     </div>
-                     <div   id="w-mc4jcf6g" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-yexoi8q6" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">&nbsp;NHÀ GÁI<br><br></p>
-                        </div>
-                     </div>
-                     <div   id="w-mqnzgrxx" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-pw4r678c" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-rqfmwf25" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Hiệp Quyết, Định Quán, Đồng Nai</p>
-                        </div>
-                     </div>
-                     <div   id="w-5k64180q" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Vĩnh Lộc B, Bình Chánh, TpHCM </p>
-                        </div>
-                     </div>
-                     <div   id="w-dhl4ax4w" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Kim Hưng</p>
-                        </div>
-                     </div>
-                     <div   id="w-yqswjsi4" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Cô Dâu</p>
-                        </div>
-                     </div>
-                     <div   id="w-38exi7p9" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">ÔNG HUỲNH KIM THÀNH
-                        <br>BÀ ÂU MỸ KHANH<br>
-                     </p>
-                        </div>
-                     </div>
-                     <div   id="w-6kdhwvkd" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">ÔNG PHẠM NGỌC ĐỨC
-                              <br>BÀ NGUYỄN THỊ THÀNH<br>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div   id="w-6pnllpry" class="com-section"data-section>
-               <div class="section-wrapper full-width full-height p-relative">
-                  <div class="section-background p-absolute full-width full-height lazy"></div>
-                  <div class="section-container full-height p-relative">
-                     <div   id="w-ay8gr0kw" class="p-absolute animate-on-scroll">
-                        <div class="line-css full-width">
-                           <div class="line-container"></div>
-                        </div>
-                     </div>
-                     <div   id="w-s6qd2poi" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Thư Mời</p>
-                        </div>
-                     </div>
-                     <div   id="w-bh5gk9eg" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">THAM DỰ LỄ CƯỚI BẢO LÂM &amp; KIM HƯNG</p>
-                        </div>
-                     </div>
-                     <div   id="w-2w9mb918" class="box com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-pb7be6s0" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-0qkm3qey" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-q5eyb1qa" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">TIỆC CƯỚI</p>
-                        </div>
-                     </div>
-                     <div   id="w-s6jip16j" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Vào Lúc 18h00 | Thứ 5</p>
-                        </div>
-                     </div>
-                     <div   id="w-otxsjwnw" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width"><span style="font-weight: bold;">Tháng 05</span><br></p>
-                        </div>
-                     </div>
-                     <div   id="w-uq011u21" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">2025<br></p>
-                        </div>
-                     </div>
-                     <div   id="w-14mlbpng" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">22<br></p>
-                        </div>
-                     </div>
-                     <div   id="w-uo3k4r5o" class="p-absolute animate-on-scroll">
-                        <div class="full-width full-height">
-                           <div class="line-css full-width">
-                              <div class="line-container"></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div   id="w-nbbwq9mt" class="p-absolute animate-on-scroll">
-                        <div class="full-width full-height">
-                           <div class="line-css full-width">
-                              <div class="line-container"></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div   id="w-1towzeln" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">(Tức Ngày 25 Tháng 04 Năm Ất Tỵ)<br></p>
-                        </div>
-                     </div>
-                     <div   id="w-tex4q7l8" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-0khj1efc" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                     <div   id="w-dc2yt118" class="com-image-block p-absolute animate-on-scroll">
-                        <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                           <div class="image-background p-absolute lazy"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div   id="w-rnhfxl3i" class="com-section"data-section>
-               <div class="section-wrapper full-width full-height p-relative">
-                  <div class="section-background p-absolute full-width full-height lazy"></div>
-                  <div class="section-container full-height p-relative">
-                     <div   id="w-kbb25z36" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Địa điểm tổ chức</p>
-                        </div>
-                     </div>
-                     <div   id="w-17ntgcp4" class="com-rectangle p-absolute">
-                        <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                     </div>
-                     <div   id="w-mzqhr3dq" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width">Trung tâm Hội nghị - Tiệc cưới&nbsp;</p>
-                     <p class="text-block-css full-width" style="font-weight: bold; font-size: large;">Diamond Place II&nbsp;<br></p>
-                     <p class="text-block-css full-width" style="font-weight: bold; font-size: large;">Sảnh Sapphire 1&nbsp;<br></p>
-                     <p class="text-block-css full-width">584 Đ. Âu Cơ, Phường 10, Tân Bình, Hồ Chí Minh&nbsp;<br></p>
-                        </div>
-                     </div>
-                     <div   id="w-wsycqc2j" class="com-html-box p-absolute">
-                        <div class="frame-html-box full-width full-height">
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9379.963044898856!2d106.63818898421444!3d10.782548531680652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eb20824063f%3A0x1e05528343d1b39b!2zRGlhbW9uZCBQbGFjZSBJSSAtIMOCdSBDxqEgLSBUcnVuZyB0w6JtIEjhu5lpIG5naOG7iyAtIFRp4buHYyBjxrDhu5tp!5e1!3m2!1svi!2sus!4v1745061552254!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                     </div>
-                     <a href="https://maps.app.goo.gl/SyHiwgYVe5VERTjx9?g_st=iz " title="Open link https://maps.app.goo.gl/SyHiwgYVe5VERTjx9?g_st=iz " id="w-2ovttpxy" class="com-button p-absolute">
-                        <div class="button-css full-height full-width lazy">
-                           <span class="button-loader"></span>
-                           <div class="button-text full-width u-select-none">XEM TRÊN GOOGLE MAP</div>
-                        </div>
-                     </a>
-                     <div   id="w-h0bwlcvc" class="com-text-block p-absolute animate-on-scroll">
-                        <div class="text-block">
-                           <p class="text-block-css full-width"><span style="font-weight: 700;">TIỆC CƯỚI NHÀ TRAI</span><br></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div   id="w-__popup_default__" class="d-none popup-center">
-               <div class="popup-wrapper p-absolute full-width full-height">
-                  <div class="popup-background p-absolute full-width full-height"></div>
-                  <div   id="w-h4ptetbx" class="com-rectangle p-absolute">
-                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                  </div>
-                  <div   id="w-au0o7yap" class="com-rectangle p-absolute">
-                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                  </div>
-                  <div   id="w-ozbcmpug" class="com-image-block p-absolute animate-on-scroll">
+      <div class="pageview">
+         <div id='webcake-alert-msg' class='w-alert-message-wrapper' style="display: none;z-index:9999999;"></div>
+         <div   id="w-5fieb1sl" class="com-section"data-section>
+            <div class="section-wrapper full-width full-height p-relative">
+               <div class="section-background p-absolute full-width full-height lazy"></div>
+               <div class="section-container full-height p-relative">
+                  <div   id="w-593k3hdo" class="com-image-block p-absolute">
                      <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
                         <div class="image-background p-absolute lazy"></div>
                      </div>
                   </div>
-                  <div   id="w-rq2l83gr" class="com-text-block p-absolute animate-on-scroll">
+                  <div   id="w-xt9665eb" class="com-text-block p-absolute animate-on-scroll">
                      <div class="text-block">
-                        <p class="text-block-css full-width">Rất hân hạnh được đón tiếp!</p>
+                        <h2 class="text-block-css full-width">THƯ MỜI TIỆC CƯỚI</h2>
                      </div>
                   </div>
-               </div>
-            </div>
-            <div   id="w-jphfgh54" class="d-none popup-center">
-               <div class="popup-wrapper p-absolute full-width full-height">
-                  <div class="popup-background p-absolute full-width full-height"></div>
-                  <div   id="w-jipghioh" class="com-rectangle p-absolute">
-                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                  </div>
-                  <div   id="w-vqpal5o4" class="com-text-block p-absolute">
-                     <div class="text-block">
-                        <h3 class="text-block-css full-width">XÁC NHẬN THAM DỰ</h3>
+                  <div   id="w-libmqckf" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="full-width full-height">
+                        <div class="text-block">
+                           <!-- <h1 class="text-block-css full-width animate__animated animate__zoomIn">Bảo Lâm &amp; Kim Hưng</h1> -->
+						   <h1 class="text-block-css full-width animate__animated">Bảo Lâm &amp; Kim Hưng</h1>
+                        </div>
                      </div>
                   </div>
-                  <div   id="w-4e9p787b" class="com-rectangle p-absolute">
-                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                  </div>
-                  <div   id="w-tdidxoc8" class="p-absolute">
-                     <form id="tdidxoc8" class="full-width full-height">
-                        <div   id="w-oiv62cw6" class="p-absolute">
-                           <div class="input-css full-width full-height"><input id="wi-oiv62cw6"
-                              type="text"
-                              class="full-width full-height" placeholder='Tên của bạn là?'
-                              name="full_name"
-                              aria-label="Input full_name"
-                              required
-                              ></div>
-                        </div>
-                        <div   id="w-0g83ne3w" class="com-button p-absolute">
-                           <div class="button-css full-height full-width lazy">
-                              <span class="button-loader"></span>
-                              <div class="button-text full-width u-select-none"><span style="color: rgb(0, 0, 0);">GỬI NGAY</span></div>
-                              <button type="submit" formnovalidate style="display: none;"></button>
-                           </div>
-                        </div>
-                        <div   id="w-iz5s3j31" class="p-absolute">
-                           <div class="input-css full-width full-height"><input id="wi-iz5s3j31"
-                              type="text"
-                              class="full-width full-height" placeholder='Bạn là gì của Dâu Rể nhỉ?'
-                              name="text_input_1"
-                              aria-label="Input text_input_1"
-                              ></div>
-                        </div>
-                        <div   id="w-00pnd81x" class="p-absolute">
-                           <div class="input-css full-width full-height"><input id="wi-00pnd81x"
-                              type="text"
-                              class="full-width full-height" placeholder='Gửi lời chúc đến Dâu Rể nhé!'
-                              name="text_input_2"
-                              aria-label="Input text_input_2"
-                              ></div>
-                        </div>
-                        <div   id="w-29dsc0c2" class="p-absolute">
-                           <div class="select-css full-width full-height p-relative">
-                              <select class="full-width full-height" name="select_1" aria-label="Bạn Có Tham Dự Không?">
-                                 <option selected="selected" disabled value="">Bạn Có Tham Dự Không?</option>
-                                 <option id="00a1lsp9" value="Có Thể Tham Dự">Có Thể Tham Dự</option>
-                                 <option id="qfzou631" value="Không Thể Tham Dự">Không Thể Tham Dự</option>
-                              </select>
-                              <div class="chevron"><span class="icon"></span></div>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div   id="w-au9hw7iy" class="d-none popup-center">
-               <div class="popup-wrapper p-absolute full-width full-height">
-                  <div class="popup-background p-absolute full-width full-height"></div>
-                  <div   id="w-egb0djld" class="com-rectangle p-absolute">
-                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                  </div>
-                  <div   id="w-nacom7ki" class="com-rectangle p-absolute">
-                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
-                  </div>
-                  <div   id="w-c9e6skrm" class="com-text-block p-absolute animate-on-scroll">
+                  <div   id="w-dqvmzi6o" class="com-text-block p-absolute animate-on-scroll">
                      <div class="text-block">
-                        <h2 class="text-block-css full-width">Gửi Mừng Cưới</h2>
+                        <h2 class="text-block-css full-width">THỨ 5 - 18H00<br></h2>
                      </div>
                   </div>
-                  <div   id="w-kun09plt" class="com-text-block p-absolute">
-                     <div class="text-block">
-                        <h4 class="text-block-css full-width">MBBANK - LE MANH HOANG 
-                           <br>002268868888&nbsp;<br>
-                        </h4>
+                  <div   id="w-nk5wr3l0" class="p-absolute animate-on-scroll">
+                     <div class="line-css full-width">
+                        <div class="line-container"></div>
                      </div>
                   </div>
-                  <div   id="w-bjajfu7x" class="com-image-block p-absolute">
+                  <div   id="w-2wfccz0r" class="p-absolute animate-on-scroll">
+                     <div class="line-css full-width">
+                        <div class="line-container"></div>
+                     </div>
+                  </div>
+                  <div   id="w-fohw3jt3" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <h2 class="text-block-css full-width">22.05.2025</h2>
+                     </div>
+                  </div>
+                  <div   id="w-f0fwyhbu" class="com-image-block p-absolute">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-17tsexjy" class="com-image-block p-absolute">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-m1l6yd27" class="com-image-block p-absolute">
                      <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
                         <div class="image-background p-absolute lazy"></div>
                      </div>
@@ -516,18 +98,226 @@
                </div>
             </div>
          </div>
-      </div>
-      <!-- <div id="popup-backdrop" class="popup-backdrop full-width full-height d-none"></div>
-      <div id="lightbox" class="lightbox-backdrop full-width full-height d-none"></div>
-      <div id="login-popup" class="login-popup-wrapper">
-         <div class="backdrop-login"></div>
-         <div class="popup-default-login">
-            <div class="popup-login-title">Alert</div>
-            <div class="popup-login-content">Expired or Invalid Code!</div>
-            <div class="popup-login-btn">OK</div>
+         <div   id="w-f9da4ivv" class="com-section"data-section>
+            <div class="section-wrapper full-width full-height p-relative">
+               <div class="section-background p-absolute full-width full-height lazy"></div>
+               <div class="section-container full-height p-relative">
+                  <div   id="w-6u8c2qnm" class="com-rectangle p-absolute animate-on-scroll">
+                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
+                  </div>
+                  <div   id="w-gvymydtl" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">“Trăm năm tình viên mãn,<br>Bạc đầu nghĩa phu thê</p>
+                     </div>
+                  </div>
+                  <div   id="w-4yh6c15f" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">&nbsp;NHÀ TRAI<br><br></p>
+                     </div>
+                  </div>
+                  <div   id="w-gbb0dhda" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Bảo Lâm&nbsp;</p>
+                     </div>
+                  </div>
+                  <div   id="w-vw5ecqpv" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Chú Rể</p>
+                     </div>
+                  </div>
+                  <div   id="w-mc4jcf6g" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-yexoi8q6" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">&nbsp;NHÀ GÁI<br><br></p>
+                     </div>
+                  </div>
+                  <div   id="w-mqnzgrxx" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-pw4r678c" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-rqfmwf25" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Hiệp Quyết, Định Quán, Đồng Nai</p>
+                     </div>
+                  </div>
+                  <div   id="w-5k64180q" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Vĩnh Lộc B, Bình Chánh, TpHCM </p>
+                     </div>
+                  </div>
+                  <div   id="w-dhl4ax4w" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Kim Hưng</p>
+                     </div>
+                  </div>
+                  <div   id="w-yqswjsi4" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Cô Dâu</p>
+                     </div>
+                  </div>
+                  <div   id="w-38exi7p9" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">ÔNG HUỲNH KIM THÀNH
+							<br>BÀ ÂU MỸ KHANH<br>
+						</p>
+                     </div>
+                  </div>
+                  <div   id="w-6kdhwvkd" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">ÔNG PHẠM NGỌC ĐỨC
+                           <br>BÀ NGUYỄN THỊ THÀNH<br>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
-      </div> -->
-      <!-- <script>!function(){var A,o;A=function(A){window.is_support_webp=A},(o=new Image).onload=function(){A(o.width>0&&o.height>0)},o.onerror=function(){A(!1)},o.src="data:image/webp;base64,"+({lossless:"UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA=="}).lossless}();</script> -->
+         <div   id="w-6pnllpry" class="com-section"data-section>
+            <div class="section-wrapper full-width full-height p-relative">
+               <div class="section-background p-absolute full-width full-height lazy"></div>
+               <div class="section-container full-height p-relative">
+                  <div   id="w-ay8gr0kw" class="p-absolute animate-on-scroll">
+                     <div class="line-css full-width">
+                        <div class="line-container"></div>
+                     </div>
+                  </div>
+                  <div   id="w-s6qd2poi" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Thư Mời</p>
+                     </div>
+                  </div>
+                  <div   id="w-bh5gk9eg" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">THAM DỰ LỄ CƯỚI BẢO LÂM &amp; KIM HƯNG</p>
+                     </div>
+                  </div>
+                  <div   id="w-2w9mb918" class="box com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-pb7be6s0" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-0qkm3qey" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-q5eyb1qa" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">TIỆC CƯỚI</p>
+                     </div>
+                  </div>
+                  <div   id="w-s6jip16j" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Vào Lúc 18h00 | Thứ 5</p>
+                     </div>
+                  </div>
+                  <div   id="w-otxsjwnw" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width"><span style="font-weight: bold;">Tháng 05</span><br></p>
+                     </div>
+                  </div>
+                  <div   id="w-uq011u21" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">2025<br></p>
+                     </div>
+                  </div>
+                  <div   id="w-14mlbpng" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">22<br></p>
+                     </div>
+                  </div>
+                  <div   id="w-uo3k4r5o" class="p-absolute animate-on-scroll">
+                     <div class="full-width full-height">
+                        <div class="line-css full-width">
+                           <div class="line-container"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div   id="w-nbbwq9mt" class="p-absolute animate-on-scroll">
+                     <div class="full-width full-height">
+                        <div class="line-css full-width">
+                           <div class="line-container"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div   id="w-1towzeln" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">(Tức Ngày 25 Tháng 04 Năm Ất Tỵ)<br></p>
+                     </div>
+                  </div>
+                  <div   id="w-tex4q7l8" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-0khj1efc" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+                  <div   id="w-dc2yt118" class="com-image-block p-absolute animate-on-scroll">
+                     <div class="image-block-css p-relative full-width full-height full-mask-size mask-position">
+                        <div class="image-background p-absolute lazy"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div   id="w-rnhfxl3i" class="com-section"data-section>
+            <div class="section-wrapper full-width full-height p-relative">
+               <div class="section-background p-absolute full-width full-height lazy"></div>
+               <div class="section-container full-height p-relative">
+                  <div   id="w-kbb25z36" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Địa điểm tổ chức</p>
+                     </div>
+                  </div>
+                  <div   id="w-17ntgcp4" class="com-rectangle p-absolute">
+                     <div class="rectangle-css full-mask-size mask-position full-height full-width lazy"></div>
+                  </div>
+                  <div   id="w-mzqhr3dq" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width">Trung tâm Hội nghị - Tiệc cưới&nbsp;</p>
+						<p class="text-block-css full-width" style="font-weight: bold; font-size: large;">Diamond Place II&nbsp;<br></p>
+						<p class="text-block-css full-width" style="font-weight: bold; font-size: large;">Sảnh Sapphire 1&nbsp;<br></p>
+						<p class="text-block-css full-width">584 Đ. Âu Cơ, Phường 10, Tân Bình, Hồ Chí Minh&nbsp;<br></p>
+                     </div>
+                  </div>
+                  <div   id="w-wsycqc2j" class="com-html-box p-absolute">
+                     <div class="frame-html-box full-width full-height">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9379.963044898856!2d106.63818898421444!3d10.782548531680652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eb20824063f%3A0x1e05528343d1b39b!2zRGlhbW9uZCBQbGFjZSBJSSAtIMOCdSBDxqEgLSBUcnVuZyB0w6JtIEjhu5lpIG5naOG7iyAtIFRp4buHYyBjxrDhu5tp!5e1!3m2!1svi!2sus!4v1745061552254!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+                  </div>
+                  <a href="https://maps.app.goo.gl/SyHiwgYVe5VERTjx9?g_st=iz " title="Open link https://maps.app.goo.gl/SyHiwgYVe5VERTjx9?g_st=iz " id="w-2ovttpxy" class="com-button p-absolute">
+                     <div class="button-css full-height full-width lazy">
+                        <span class="button-loader"></span>
+                        <div class="button-text full-width u-select-none">XEM TRÊN GOOGLE MAP</div>
+                     </div>
+                  </a>
+                  <div   id="w-h0bwlcvc" class="com-text-block p-absolute animate-on-scroll">
+                     <div class="text-block">
+                        <p class="text-block-css full-width"><span style="font-weight: 700;">TIỆC CƯỚI NHÀ TRAI</span><br></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <script id="lazy">
          let elements = []
          document.querySelectorAll('.lazy, [data-src]').forEach(el => elements.push(el))
@@ -568,9 +358,6 @@
       </script>
       <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Barlow:100,300,400,700,900|Arial:100,300,400,700,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';">
       <style>@font-face{font-family: "UTM-Azkia.ttf"; src: url("https://statics.pancake.vn/web-media/35/7a/ab/a5/2bcc8b3414fa20782f68d8d552b13313f2a24e5b267a97b3cf3a5ec3.ttf") format("truetype"); font-display:swap;}@font-face{font-family: "Ephesis-Regular.ttf"; src: url("https://statics.pancake.vn/web-media/65/48/68/4f/ca5a0c732f276b6fef504eddf0e2d6cdf65cf198b0440dde6d90c5a8.ttf") format("truetype"); font-display:swap;}@font-face{font-family: "VNF-Shelia-Regular (1).ttf"; src: url("https://statics.pancake.vn/web-media/a0/d8/b3/81/47ff441bb69035853506ba95cdbb97aae97c387b81edddb1bc28e2fb.ttf") format("truetype"); font-display:swap;}@font-face{font-family: "UTM-Cafeta.ttf"; src: url("https://statics.pancake.vn/web-media/04/eb/01/7a/e19221a44fabb6fd54c6339fd43b1c25ebbe20e97f6633beed4cbc79.ttf") format("truetype"); font-display:swap;}</style>
-      <!-- <link rel="stylesheet" href="css/animatev4.css" type="text/css"> -->
-	  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css">
-      <link rel="preload" href="css/iconfont.css" as="style" onload="this.onload=null;this.rel='stylesheet';"> -->
       <script type="text/javascript" id="event_data" src="script.js"></script>
 	  <script type="text/javascript" src="./webcake/v4/a.js"></script>
       <script>window.gtracks =[];window.gga="";window.ggt="";window.ggads="";</script>
@@ -616,8 +403,11 @@
 			entries.forEach(entry => {
 			  if (entry.isIntersecting) {
 				const el = entry.target;
-				el.classList.add('animation');
-				observer.unobserve(el); // Optional: remove observer after animation
+				// el.classList.add('animation');
+				// observer.unobserve(el); // Optional: remove observer after animation
+            el.classList.remove('animation'); // Remove existing class to retrigger
+            void el.offsetWidth; // Force reflow (required for retrigger)
+            el.classList.add('animation');
 			  }
 			});
 		  }, {
@@ -629,18 +419,5 @@
 		  });
 		});
 	</script>
-   <script>
-      const heart = document.querySelector('.heart');
-      const cover = document.querySelector('.cover');
-      const homepage = document.querySelector('.homepage');
-
-      heart.addEventListener('click', () => {
-         cover.classList.add('animate__fadeOut');
-         cover.addEventListener('animationend', () => {
-            cover.style.display = 'none';
-            homepage.classList.add('animate__fadeIn', 'show');
-         }, { once: true });
-      });
-   </script>	
    </body>
 </html>
