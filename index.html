@@ -419,5 +419,13 @@
 		  });
 		});
 	</script>
+   <script>
+      const audio = document.getElementById('background-music');
+      const unmuteButton = document.getElementById('unmute-btn');
+    
+      unmuteButton.addEventListener('click', () => {
+        audio.muted = false;  // Unmute the audio
+      });
+    </script>
    </body>
 </html>
