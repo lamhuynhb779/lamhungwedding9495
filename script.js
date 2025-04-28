@@ -419,14 +419,6 @@ window.event_data = {
                     "action": "show_hide_element",
                     "appTarget": "",
                     "hoverColor": "",
-                    "id": "prwbz4w9",
-                    "onlyMode": "hide",
-                    "target": "w-17tsexjy",
-                    "type": "click"
-                }, {
-                    "action": "show_hide_element",
-                    "appTarget": "",
-                    "hoverColor": "",
                     "id": "7zqsovxg",
                     "onlyMode": "show",
                     "target": "w-m1l6yd27",
@@ -454,14 +446,6 @@ window.event_data = {
                     "id": "on0bslwe",
                     "nameFile": "EM ĐỒNG Ý (I DO) - ĐỨC PHÚC x 911 x KHẮC HƯNG - OFFICIAL MUSIC VIDEO - VALENTINE 2023 (mp3cut.net).mp3",
                     "target": "https://statics.pancake.vn/web-media/30/2d/16/de/6ef7c8fcf6b86241ef11f111d6d3269a74a27c5ab5a451854d150895-w:0-h:0-l:2426583-t:audio/mpeg.mp3",
-                    "type": "click"
-                }, {
-                    "action": "show_hide_element",
-                    "appTarget": "",
-                    "hoverColor": "",
-                    "id": "prwbz4w9",
-                    "onlyMode": "show",
-                    "target": "w-17tsexjy",
                     "type": "click"
                 }, {
                     "action": "show_hide_element",

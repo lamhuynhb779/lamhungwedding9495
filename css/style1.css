@@ -225,39 +225,6 @@
       --type: 0;
     }
   
-    #w-17tsexjy {
-      width: 50px;
-      height: 50px;
-      z-index: 10;
-      position: fixed;
-      left: calc((100% - 420px) / 2 + 20px);
-      bottom: 20px;
-    }
-  
-    #w-17tsexjy .image-block-css {
-      border-color: rgba(229, 231, 235, 1);
-      border-style: solid;
-      border-width: 0px;
-      position: absolute;
-      z-index: null;
-    }
-  
-    #w-17tsexjy .image-background {
-      width: 50px;
-      height: 50px;
-      top: 0px;
-      left: 0px;
-      background: center center/ cover no-repeat scroll content-box border-box
-        url("https://content.pancake.vn/1/fwebp/02/d4/a7/88/fef5132f979892c1778a688f2039942fc24b396b332750179775f87e-w:200-h:200-l:8183-t:image/png.png");
-      --type: 0;
-    }
-  
-    #w-17tsexjy .image-background-compare {
-      background: undefined;
-      clip: rect(0, 25px, 50px, 0);
-      --type: 0;
-    }
-  
     #w-m1l6yd27 {
       display: none;
       width: 50px;
