@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Cover Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    /* Cover Page */
+    .cover {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffe6ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .heart {
+      width: 100px;
+      height: 90px;
+      background-color: red;
+      position: relative;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      animation: beat 1s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 100px;
+      height: 90px;
+      background-color: red;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1) rotate(-45deg);
+      }
+      50% {
+        transform: scale(1.1) rotate(-45deg);
+      }
+    }
+
+    /* Main homepage content (initially hidden) */
+    .homepage {
+      display: none;
+      height: 100%;
+      background-color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .homepage.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cover with Heart -->
+  <div class="cover animate__animated animate__fadeIn">
+    <div class="heart animate__animated animate__zoomIn"></div>
+  </div>
+
+  <!-- Main Homepage -->
+  <div class="homepage animate__animated">
+    <h1>Welcome to the Homepage!</h1>
+    <p>This content was hidden until the heart was clicked.</p>
+  </div>
+
+  <!-- Script to handle click -->
+  <script>
+    const heart = document.querySelector('.heart');
+    const cover = document.querySelector('.cover');
+    const homepage = document.querySelector('.homepage');
+
+    heart.addEventListener('click', () => {
+      cover.classList.add('animate__fadeOut');
+      cover.addEventListener('animationend', () => {
+        cover.style.display = 'none';
+        homepage.classList.add('animate__fadeIn', 'show');
+      }, { once: true });
+    });
+  </script>
+
+</body>
+</html>
